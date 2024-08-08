@@ -18,6 +18,7 @@ namespace StackOverflow
         {
             // Code that runs on application startup
             AreaRegistration.RegisterAllAreas();
+            UnityConfig.RegisterComponents();
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             GlobalConfiguration.Configure(WebApiConfig.Register);
             RouteConfig.RegisterRoutes(RouteTable.Routes);            
