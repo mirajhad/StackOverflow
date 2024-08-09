@@ -312,9 +312,8 @@
     <Content Include="Views\Home\Categories.cshtml" />
     <Content Include="Views\Home\Questions.cshtml" />
     <Content Include="Views\Questions\View.cshtml" />
-    <Content Include="Views\Questions\AddAnswer.cshtml" />
     <Content Include="Views\Questions\Create.cshtml" />
-    <Content Include="Views\Questions\EditAnswer.cshtml" />
+    <Content Include="Views\Home\Search.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
