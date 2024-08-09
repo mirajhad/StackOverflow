@@ -1,4 +1,5 @@
-﻿using StackOverflow.ServiceLayer;
+﻿using StackOverflow.CustomFilters;
+using StackOverflow.ServiceLayer;
 using StackOverflow.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -30,7 +31,7 @@ namespace StackOverflow.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-       // [UserAuthorizationFilterAttribute]
+        [UserAuthorizationFilterAttribute]
         public ActionResult AddAnswer(NewAnswerViewModel navm)
         {
             navm.UserID = Convert.ToInt32(Session["CurrentUserID"]);
@@ -74,7 +75,7 @@ namespace StackOverflow.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-       // [UserAuthorizationFilter]
+       [UserAuthorizationFilter]
         public ActionResult Create(NewQuestionViewModel qvm)
         {
             if (ModelState.IsValid)
